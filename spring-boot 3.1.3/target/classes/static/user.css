@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+}
+
+form {
+    width: 25%;
+}
+
+.btn {
+    width: 100%;
+}
+
+/*header*/
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background: #343a40;
+    color: white;
+}
+
+input {
+    background: #343a40;
+    color: #8097a0;
+    border: none;
+}
+
+/*crud*/
+.content {
+    height: 620px;
+    width: 100%;
+    background: #f8f9fa;
+}
+
+.center {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 11px;
+    height: 100%;
+    width: 97%;
+}
+
+.h-left {
+    display: flex;
+    justify-content: space-between;
+    width: 30.8%;
+
+}
+
+.h-left p {
+    font-size: 22px;
+}
+
+.h-right {
+    margin-top: 2px;
+    width: 80px;
+}
+
+.c-left {
+    height: 100%;
+    width: 17%;
+    padding-top: 1%;
+    background: white;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 81%;
+}
+
+.c-header p {
+    font-size: 51px;
+}
+
+.c-header {
+    height: 15%;
+    width: 100%;
+}
+
+.c-body {
+    height: 80%;
+    width: 98%;
+}
+
+.link-hover {
+    display: flex;
+    justify-content: flex-start;
+    color: #007dff;
+}
+
+.link-hover:hover {
+    background: #007bff;
+    color: white;
+}
+
+.in-content {
+    background: white;
+    padding: 15px;
+    padding-top: 0;
+    border: 1px solid #dee2e6;
+}
+
+.u-title h2 {
+    margin: 13px;
+}
+
+label {
+    display: flex;
+    margin-bottom: -16px;
+    justify-content: center;
+    width: 250px;
+    font-weight: bold;
+}
+
+.position div {
+    width: 28%;
+    margin-right: 10px;
+    margin-top: -25px;
+    display: flex;
+    justify-content: space-between;
+}
+/*crud end*/

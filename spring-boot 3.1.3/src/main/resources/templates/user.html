@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" th:href="@{user.css}">
+    <meta charset="UTF-8">
+    <title>User</title>
+
+</head>
+<body>
+<header>
+    <div class="center">
+        <div class="h-left">
+            <p th:text="${user.name}">Name</p>
+            <p>with roles:</p>
+            <p th:text="${user.roles}">Roles</p>
+        </div>
+        <form class="h-right" th:action = " @{/logout}">
+            <input type = "submit" value = "logout">
+        </form>
+    </div>
+</header>
+<div class="content">
+    <div class="c-left">
+        <a class="btn link-hover" href="/admin">Admin</a>
+        <a class="btn link-hover" href="/user">User</a>
+    </div>
+    <div class="c-right">
+        <div class="c-header">
+            <p>User data</p>
+        </div>
+        <div class="c-body">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <p class="nav-link active" id="home-tab" data-toggle="tab" role="tab" aria-controls="home" aria-selected="true">User table</p>
+                </li>
+            </ul>
+            <div class="tab-content in-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <!--table-->
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">Role</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td th:text="${user.id}" scope="row">Id</td>
+                            <td th:text="${user.name}">Name</td>
+                            <td th:text="${user.age}">Age</td>
+                            <td th:text="${user.roles}">Role</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!--table-end-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
